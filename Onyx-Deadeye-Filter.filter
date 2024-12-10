@@ -8,6 +8,14 @@
 #
 
 #--------------------------
+# Hide Overrides because I'm lazy
+#--------------------------
+
+Hide
+Class "Currency"
+BaseType "Scroll of Wisdom"
+
+#--------------------------
 # Overrides - Uniques, Valuables
 #--------------------------
 
@@ -333,40 +341,24 @@ PlayEffect Yellow
 MinimapIcon 1 Yellow Diamond
 
 #--------------------------
+# Salvagable Items
+#--------------------------
+
+Show
+Sockets > 1
+SetBorderColor 200 200 200
+SetFontSize 35
+
+Show
+Quality > 20
+SetBorderColor 200 200 200
+SetFontSize 35
+
+#--------------------------
 # Hide Stuff
 #--------------------------
 
 Hide
 Rarity <= Magic
-Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Rings" "Amulets" "Belts"
+Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Rings" "Amulets" "Belts" "Focus"
 AreaLevel >= 65
-
-#--------------------------
-# Salvagable Items
-#--------------------------
-
-# Not working!
-Show
-Sockets > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
-
-Show
-Quality > 10
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
-
-# Not working!
-Show
-Sockets > 0
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
-
-Show
-Quality > 10
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
