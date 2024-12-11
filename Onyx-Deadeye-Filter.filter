@@ -20,7 +20,7 @@ BaseType "Scroll of Wisdom"
 # Hide Charms
 
 Hide
-BaseType " Rune" " Charm"
+BaseType " Charm"
 
 #--------------------------
 # Overrides - Uniques, Valuables
