@@ -1,7 +1,7 @@
 #===============================================================================================================
 # Onyx's Loot Filter for Endgame Deadeye
 #===============================================================================================================
-# VERSION:  1.1
+# VERSION:  1.2
 # AUTHOR:   Onyx
 #
 # Based off of NeverSink's filter, but added things that are relevant for me (deadeye)
@@ -11,9 +11,16 @@
 # Hide Overrides because I'm lazy
 #--------------------------
 
+# Hide Scroll of Wisdoms
+
 Hide
 Class "Currency"
 BaseType "Scroll of Wisdom"
+
+# Hide Charms
+
+Hide
+BaseType " Rune" " Charm"
 
 #--------------------------
 # Overrides - Uniques, Valuables
@@ -207,9 +214,9 @@ SetBorderColor 0 240 190
 SetFontSize 40
 PlayEffect Cyan Temp
 
-# Special B Tier - Any Runes and Charms
+# Special B Tier - Any Runes
 Show 
-BaseType " Rune" " Charm"
+BaseType " Rune"
 SetTextColor 0 240 190
 PlayEffect Cyan Temp
 
@@ -217,29 +224,29 @@ PlayEffect Cyan Temp
 # Socketables and Special Character Equipment
 #--------------------------
 
-# Currency Tier A: Gemcutter, Annullment
+# Currency Tier A
 Show
 Class "Currency"
-BaseType "Gemcutter's Prism" "Orb of Annulment" "Orb of Chance"
+BaseType "Exalted Orb" "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb"
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
 SetBackgroundColor 240 90 35
 PlayAlertSound 1 300
-PlayEffect White
-MinimapIcon 1 White Circle
-SetFontSize 40
+PlayEffect Red
+MinimapIcon 1 Red Circle
+SetFontSize 35
 
-# Currency Tier B: Vaal, Chaos, Exalt, Exotic
+# Currency Tier B
 Show
 Class "Currency"
-BaseType "Vaal Orb" "Greater Jeweller's Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Exalted Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Orb of Chance"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
+BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+SetTextColor 255 100 0 255
+SetBorderColor 255 100 0 255
+SetBackgroundColor 83 14 14 255
 PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 1 White Circle
-SetFontSize 40
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
+SetFontSize 35
 
 Show
 Class "Currency"
@@ -251,13 +258,14 @@ PlayAlertSound 2 300
 PlayEffect White
 MinimapIcon 1 White Circle
 
-# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+# Currency Tier C
 Show
 Class "Currency"
 BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
-MinimapIcon 2 Grey Circle
+SetBackgroundColor 76 51 12
+MinimapIcon 2 White Circle
 
 Show
 Class "Currency"
