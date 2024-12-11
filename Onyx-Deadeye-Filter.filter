@@ -358,7 +358,7 @@ SetBorderColor 200 200 200
 SetFontSize 35
 
 Show
-Quality > 20
+Quality > 10
 SetBorderColor 200 200 200
 SetFontSize 35
 
